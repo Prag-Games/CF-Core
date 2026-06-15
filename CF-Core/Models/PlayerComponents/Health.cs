@@ -27,7 +27,7 @@ public class Health
             CurrentHealth = 100
         };
 
-        return new Health();
+        return health;
     }
 
     public bool IsZero()
