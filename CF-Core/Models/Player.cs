@@ -10,10 +10,10 @@ public class Player
     
     public void TakeDamage(DamageContext context)
     {
-        DamagePipeline.Process(context);
+       var resultContext = DamagePipeline.Process(context);
 
-        if (!context.IsCancelled)
-            Health.Reduce(context.Amount);
+        if (!resultContext.IsCancelled)
+            Health.Reduce(resultContext.Amount);
     }
     
     public bool IsDead()
