@@ -34,4 +34,9 @@ public class Health
     {
         return CurrentHealth == 0;
     }
+
+    public bool IsBelowZero()
+    {
+        return CurrentHealth < 0;
+    }
 }

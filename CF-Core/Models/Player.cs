@@ -8,6 +8,6 @@ public class Player
 
     public bool IsDead()
     {
-        return this.Health.IsZero();
+        return this.Health.IsZero() || this.Health.IsBelowZero();
     }
 }
