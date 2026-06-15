@@ -10,4 +10,9 @@ public class Player
     {
         return this.Health.IsZero() || this.Health.IsBelowZero();
     }
+
+    public bool IsAlive()
+    {
+        return !this.IsDead();
+    }
 }
