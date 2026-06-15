@@ -4,6 +4,11 @@ public class PlayerDamagePipeline
 {
     private DamagePipeline DamagePipeline { get; set; } = new();
     
+    
+    public static PlayerDamagePipeline Default() {
+        return new PlayerDamagePipeline();
+    }
+    
     public void Add(IDamageModifier modifier)
     {
         DamagePipeline.Add(modifier);
