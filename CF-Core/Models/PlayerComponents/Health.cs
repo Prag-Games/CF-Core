@@ -29,6 +29,11 @@ public class Health
 
         return health;
     }
+    
+    public void Reduce(int amount)
+    {
+        CurrentHealth -= amount;
+    }
 
     public bool IsZero()
     {
