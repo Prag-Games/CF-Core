@@ -29,4 +29,9 @@ public class Health
 
         return new Health();
     }
+
+    public bool IsZero()
+    {
+        return CurrentHealth == 0;
+    }
 }
